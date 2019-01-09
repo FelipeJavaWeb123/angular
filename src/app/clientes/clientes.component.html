@@ -1,0 +1,12 @@
+
+  <ol>
+    <li
+    *ngFor="let item of clientes" [appMeusClientes]="item">
+      {{ item.nome | uppercase }} - 
+      {{ item.idade }} - 
+      {{ item.valor | moedaBrasil }} - 
+      {{ item.nasc | formataData }} 
+    </li>
+  </ol>
+
+

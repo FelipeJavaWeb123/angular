@@ -1,0 +1,16 @@
+<div class="lista">
+
+  <label>Digite seu nome:  </label> 
+  <input type="text" [(ngModel)]="cliente.nome"/>
+  <br>
+  <label>Digite sua idade:  </label> 
+  <input type="text" [(ngModel)]="cliente.idade" />
+  <br>
+  <label>Digite valor:  </label> 
+  <input type="text" [(ngModel)]="cliente.valor" />
+  <br>
+  <label>Nascimento:  </label> 
+  <input type="text" [(ngModel)]="cliente.nasc" />
+
+  <button type="button" (click)="addcliente()">Clique aqui</button>
+</div>
