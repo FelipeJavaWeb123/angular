@@ -4,6 +4,6 @@
     Bem vindo ao cruso de angular, {{ title }}!
   </h1> 
 
-  <app-novo-cliente></app-novo-cliente>
-  <app-clientes></app-clientes>
+  <app-novo-cliente [clientes]="clientes"></app-novo-cliente>
+  <app-clientes [clientes]="clientes" ></app-clientes>
 </div>

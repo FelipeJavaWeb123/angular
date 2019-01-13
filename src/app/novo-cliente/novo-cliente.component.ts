@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Cliente } from '../Cliente';
+import { ClientesComponent } from '../clientes/clientes.component';
 
 @Component({
   selector: 'app-novo-cliente',
@@ -7,8 +8,6 @@ import { Cliente } from '../Cliente';
   styleUrls: ['./novo-cliente.component.css']
 })
 export class NovoClienteComponent implements OnInit {
-
-  clientes = [];
   
   cliente:Cliente = {
     nome: "",
@@ -16,6 +15,9 @@ export class NovoClienteComponent implements OnInit {
     valor: 0,
     nasc: '1991-08-30'
   };
+
+  @Input()
+  clientes;
 
   addcliente(){
     let cli = Object.assign({}, this.cliente)
